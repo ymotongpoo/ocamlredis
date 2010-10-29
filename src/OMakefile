@@ -1,0 +1,15 @@
+.PHONY: all
+
+FILES[] =
+   problem1
+
+PROGRAM = problem1
+# OCAML_LIBS += 
+# OCAML_CLIBS +=
+# OCAML_OTHER_LIBS +=
+# OCAML_LIB_FLAGS +=
+
+.DEFAULT: $(OCamlProgram $(PROGRAM), $(FILES))
+
+clean:
+  rm -f $(filter-proper-targets $(ls R, .))
